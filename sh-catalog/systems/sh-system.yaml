@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: staff-health-app
+  description: Staff-Health Application
+  annotations:
+    'backstage.io/techdocs-ref': dir:.
+spec:
+  owner: team-b
+  domain: cloud-apps

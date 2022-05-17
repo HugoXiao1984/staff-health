@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: sha-catalog-info-hugo
+  description: A sample catalog for the sh application
+  annotations:
+    'backstage.io/techdocs-ref': dir:.
+spec:
+  targets:
+    - ./components/sh-ui/sh-ui.yaml
+    - ./components/redis-server/redis-server.yaml
+    - ./components/sh-db/sh-db.yaml
+    - ./components/sh-appserver/sh-appserver.yaml
+    - ./components/sh-web/sh-web.yaml
+    - ./groups/org.yaml
+    - ./systems/sh-system.yaml
+    - ./resources/sh-db-resource.yaml
+    - ./domains/cloudapps-domain.yaml

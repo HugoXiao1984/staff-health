@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: sh-db
+  description: Stores sh application Database
+  annotations:
+    'backstage.io/techdocs-ref': dir:.
+spec:
+  type: database
+  owner: team-b
+  system: staff-health-app

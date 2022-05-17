@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sh-ui
+  description: sh UI App
+  tags:
+    - javascript
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=sh-ui'
+    'backstage.io/techdocs-ref': dir:.
+  links:
+    - url: https://sh-ui.example.com
+      title: 'Yelb UI Information'
+      icon: locallibrary
+spec:
+  type: service
+  lifecycle: experimental
+  owner: team-b
+  system: staff-health-app
+  dependsOn: [Component:sh-appserver]
