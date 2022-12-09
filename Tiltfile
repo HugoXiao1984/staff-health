@@ -1,4 +1,4 @@
-SOURCE_IMAGE = os.getenv("SOURCE_IMAGE", default='harbor-tanzu.eng.vmware.com/workloads/hugo-staff-health-app-gz')
+SOURCE_IMAGE = os.getenv("SOURCE_IMAGE", default='harbor-tanzu.eng.vmware.com/workloads/hugo-staff-health-app')
 LOCAL_PATH = os.getenv("LOCAL_PATH", default='local-path')
 NAMESPACE = os.getenv("NAMESPACE", default='default')
 
